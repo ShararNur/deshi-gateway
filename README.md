@@ -1,5 +1,5 @@
 # Gateway (Deshi App)
-# [LIVE](https://famous-cheesecake-8dc875.netlify.app/)
+# [LIVE](https://deshi-gateway-by-sharar.netlify.app/)
 
 ### Features
 - login using mobile number 
