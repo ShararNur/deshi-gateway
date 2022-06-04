@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { NavLink } from "react-router-dom";
 
-const PayMethod = ({ payMethod, setPayMethod }) => {
+const PayMethod = () => {
     return (
-        <div className='container text-center pt-4 px-4'>
+        <div className='container text-center p-4'>
             <p className="payment-method">How would you like to pay?</p>
-            <div className="d-flex p-1 border border-1">
-                <button type="submit" className={`w-50 btn login-or-qr rounded-0 py-2 fs-4 fw-600 ${payMethod === "LoginToPay" ? "active" : ''}`} onClick={() => setPayMethod("LoginToPay")} >Login to Pay</button>
-                <button type="submit" className={`w-50 btn login-or-qr rounded-0 py-2 fs-4 fw-600 ${payMethod === "ScanQR" ? "active" : ''}`} onClick={() => setPayMethod("ScanQR")}>Scan QR Code</button>
-            </div>
+            <nav className="border p-1">
+                <NavLink to='/add-number' className="w-50 btn rounded-0 fs-4 fw-600">Login to Pay</NavLink>
+                <NavLink to='/scan-qr' className="w-50 btn rounded-0 fs-4 fw-600 ">Scan to Pay</NavLink>
+            </nav>
         </div>
     );
 };
