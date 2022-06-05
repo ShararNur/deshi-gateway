@@ -3,9 +3,10 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #root {
@@ -15,30 +16,29 @@ body {
   align-items: center;
   background: #E5E5E5;
   font-family: 'Montserrat', sans-serif;
-  border: 1px solid green;
-  padding: 40px;
+  /* border: 1px solid green; */
+  max-height: 100vh;
+
 }
 
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  max-width: 530px;
-  /* height: 700px; */
-  border: 1px solid black;
-  overflow: hidden;
-  
-  
+  height: 580px;
+  width: 100%; 
+  max-width: 630px;
+  /* border: 1px solid black; */
 }
 
 .nur
 { 
-  height: 588px;
-  max-width: 530px;
-  border: 2px red solid;
+
+  width: 90%; 
+  /* border: 2px red solid; */
   background: #F5F5F5;
 }
+
 
 
 
@@ -151,6 +151,14 @@ font-weight: 500 !important;
 width: 80%;
 }
 
+.w-20{
+  width: 20%;
+}
+
+.padding-x{
+  padding-inline: 27px;
+}
+
 .payment-method {
   font-weight: 600;
   font-size: 20px;
@@ -162,7 +170,7 @@ color: white !important;
 }
 
 .w-71{
-  width: 71%;
+  width: 66.4%;
 }
 
 .logo {
@@ -172,6 +180,34 @@ color: white !important;
 .fs-11{
   font-size:11px;
 }
+
+.padding-bottom{
+  padding-bottom: 22px;
+}
+
+.padding-pin{
+  padding-block: 71.5px;
+}
+
+.padding-otp{
+  padding-block: 69px;
+}
+
+.padding-number {
+  padding-block: 0.2px;
+}
+
+ .mb-7{
+  padding-bottom:7px;
+} 
+
+
+
+
+
+
+
+
 
 
 

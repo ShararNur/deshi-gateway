@@ -11,7 +11,7 @@ import NotFound from './components/NotFound';
 
 function App() {
   const [mobileNum, setMobileNum] = useState("");
-  const [numWithStar, setNumWithStar] = useState("");
+
 
 
   // const numericOnly = (e) => {
@@ -27,36 +27,33 @@ function App() {
   //     }
   // };
 
-  const formatPhoneWithStar = (phone) => {
+  // const formatPhoneWithStar = (phone) => {
 
-    const prefixLength = 3;
-    const suffixLength = 2;
+  //   const prefixLength = 4;
+  //   const suffixLength = 3;
 
-    const prefix = phone.substring(0, prefixLength);
-    const suffix = phone.slice(-suffixLength);
-    const nbStars = phone.length - (prefixLength + suffixLength);
+  //   const prefix = phone.substring(0, prefixLength);
+  //   const suffix = phone.slice(-suffixLength);
+  //   const nbStars = phone.length - (prefixLength + suffixLength);
 
-    let formattedPhone = prefix;
-    for (let i = 0; i < nbStars; i++) {
-      formattedPhone += '*';
-    }
-    formattedPhone += suffix;
+  //   let formattedPhone = prefix;
+  //   for (let i = 0; i < nbStars; i++) {
+  //     formattedPhone += '*';
+  //   }
+  //   formattedPhone += suffix;
 
-    return formattedPhone;
-  }
-
-
+  //   return formattedPhone;
+  // }
 
 
   return (
     <div className="app" >
       <div className="nur">
         <Header />
-        {formatPhoneWithStar(mobileNum)}
         <Routes>
           <Route path="*" element={<NotFound />} />
           <Route path="/add-number" element={<AddNumber mobileNum={mobileNum} setMobileNum={setMobileNum} />} />
-          <Route path="/add-otp" element={<AddOtp />} />
+          <Route path="/add-otp" element={<AddOtp mobileNum={mobileNum} />} />
           <Route path="/add-pin" element={<AddPin />} />
           <Route path="/scan-qr" element={<ScanQr />} />
         </Routes>
