@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ButtonGroup from '../components/ButtonGroup';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from "react-router-dom"; import PayMethod from '../components/PayMethod';
-;
+import { useNavigate, Link } from "react-router-dom";
+import PayMethod from '../components/PayMethod';
+
 
 const AddNumber = ({ mobileNum, setMobileNum }) => {
 
@@ -40,10 +41,9 @@ const AddNumber = ({ mobileNum, setMobileNum }) => {
                                 <label htmlFor="phone">Mobile number</label>
                             </div>
                         </div>
-                        <p className="fs-14 mb-3 pb-4">By clicking on <span className="fw-bold">Confirm,</span>  You are agreeing to the <a href="#" className="text-body">Terms & Conditions.</a> </p>
+                        <p className="fs-14 mb-3 pb-4">By clicking on <span className="fw-bold">Confirm,</span>  You are agreeing to the <Link to="#" className="text-body">Terms & Conditions.</Link></p>
                     </div>
                     <ButtonGroup />
-                    {/* <Button /> */}
                 </form>
             </div>
 

@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
-import PayMethod from './components/PayMethod';
 import AddNumber from './pages/AddNumber';
 import AddOtp from './pages/AddOtp';
 import AddPin from './pages/AddPin';
 import Footer from './components/Footer';
 import ScanQr from './pages/ScanQr';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import NotFound from './components/NotFound';
 
 function App() {
@@ -26,25 +25,6 @@ function App() {
   //         setPin(value);
   //     }
   // };
-
-  // const formatPhoneWithStar = (phone) => {
-
-  //   const prefixLength = 4;
-  //   const suffixLength = 3;
-
-  //   const prefix = phone.substring(0, prefixLength);
-  //   const suffix = phone.slice(-suffixLength);
-  //   const nbStars = phone.length - (prefixLength + suffixLength);
-
-  //   let formattedPhone = prefix;
-  //   for (let i = 0; i < nbStars; i++) {
-  //     formattedPhone += '*';
-  //   }
-  //   formattedPhone += suffix;
-
-  //   return formattedPhone;
-  // }
-
 
   return (
     <div className="app" >
