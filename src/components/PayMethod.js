@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const PayMethod = () => {
     return (
-        <div className='container text-center p-4'>
+        <div className='text-center p-4'>
             <p className="payment-method">How would you like to pay?</p>
             <nav className="border rounded-2 p-1">
                 <NavLink to='/add-number' className="w-50 btn rounded-0 fs-4 fw-600 ">Login to Pay</NavLink>

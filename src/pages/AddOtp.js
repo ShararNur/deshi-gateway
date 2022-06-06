@@ -35,7 +35,7 @@ const AddOtp = ({ mobileNum }) => {
 
     const formatPhoneWithStar = (phone) => {
 
-        const prefixLength = 2;
+        const prefixLength = 3;
         const suffixLength = 2;
 
         const prefix = phone.substring(0, prefixLength);
@@ -47,7 +47,7 @@ const AddOtp = ({ mobileNum }) => {
             formattedPhone += '*';
         }
         formattedPhone += suffix;
-        return '0' + formattedPhone;
+        return formattedPhone;
     }
 
     return (

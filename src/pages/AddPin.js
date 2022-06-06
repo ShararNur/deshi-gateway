@@ -24,7 +24,7 @@ const AddPin = () => {
             <div className="text-center">
                 <form onSubmit={onSubmit}>
                     <div className="padding-pin">
-                        <p className="fs-18 pt-4">Enter Your PIN</p>
+                        <p className="fs-18 pt-3 pb2">Enter Your PIN</p>
                         <div className="px-4 pb-5 mb-3">
                             <div className="form-floating text-success">
                                 <input name="pin" type="password" className="form-control border-bottom" id="pin" placeholder="PIN" maxLength="4" value={pin} onChange={(e) => { setPin(e.target.value) }} required />

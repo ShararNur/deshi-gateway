@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="app" >
-      <div className="nur">
+      <div className="gateway">
         <Header />
         <Routes>
           <Route path="*" element={<NotFound />} />
